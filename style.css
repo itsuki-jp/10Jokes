@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 必要に応じて垂直方向にも中央揃えにする */
+  min-height: 100vh; /* 垂直方向の中央揃えのためのオプション */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#card {
+  background-color: #f9f9f9; /* カードの背景色 */
+  border-radius: 10px; /* 角の丸み */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影の設定 */
+  padding: 20px; /* 内側の余白 */
+  margin: 20px 0; /* 上下の余白 */
+  text-align: left; /* テキストの位置を左揃え */
+}
+
+button {
+  background-color: #007BFF; /* ボタンの背景色 */
+  color: white; /* テキストの色 */
+  border: none; /* ボーダーをなくす */
+  border-radius: 5px; /* 角の丸み */
+  padding: 10px 20px; /* 内側の余白 */
+  margin: 5px; /* ボタン間の余白 */
+  cursor: pointer; /* カーソルをポインターに */
+  font-size: 16px; /* フォントサイズ */
+  transition: background-color 0.3s, transform 0.3s; /* ホバー時のエフェクト */
+}
+
+button:hover {
+  background-color: #0056b3; /* ホバー時の背景色 */
+  transform: translateY(-2px); /* ホバー時の軽い浮き上がり */
+}
+
+button:active {
+  background-color: #004494; /* クリック時の背景色 */
+  transform: translateY(0); /* クリック時の位置 */
+}
